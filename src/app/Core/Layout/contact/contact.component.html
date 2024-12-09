@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <div class="container">
-  <h2 class="contact-heading">CONTACT FORM</h2>
+  <h2 class="contact-heading">{{'CONTACT FORM'|translate }}</h2>
   <div class="form-container">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <!-- Name Field -->
@@ -14,7 +14,7 @@
         />
         <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message" style="color: red;"
        >
-          Name is required.
+          {{'Name is required.' |translate}}
         </div>
       </div>
 
@@ -29,8 +29,8 @@
 
         />
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error-message">
-          <span *ngIf="contactForm.get('email')?.errors?.['required']" style="color: red;">Email is required.</span>
-          <span *ngIf="contactForm.get('email')?.errors?.['email']" style="color: red;">Please enter a valid email address.</span>
+          <span *ngIf="contactForm.get('email')?.errors?.['required']" style="color: red;">{{'Email is required.' |translate}}</span>
+          <span *ngIf="contactForm.get('email')?.errors?.['email']" style="color: red;">{{'Please enter a valid email address.'|translate}}</span>
         </div>
       </div>
 
@@ -44,13 +44,13 @@
         </textarea>
         <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message" style="color: red;"
        >
-          Message is required.
+          {{'Message is required.' |translate}}
         </div>
       </div>
 
       <!-- Submit Button -->
       <div class="form-group-submit">
-        <button type="submit">Send message</button>
+        <button type="submit">{{'Send message' |translate}}</button>
       </div>
     </form>
   </div>
