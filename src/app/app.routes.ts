@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { NavbarComponent } from './Navbar/navbar/navbar/navbar.component';
-import { HomeComponent } from './Home/home/home.component';
-import { AboutComponent } from './About/about/about.component';
-import { ServiceComponent } from './Services/service/service.component';
-import { ContactComponent } from './Contact/contact/contact.component';
+import { NavbarComponent } from './Core/Layout/navbar/navbar.component';
+import { HomeComponent } from './Core/Layout/home/home.component';
+import { AboutComponent } from './Core/Layout/about/about.component';
+import { ServiceComponent } from './Core/Layout/service/service.component';
+import { ContactComponent } from './Core/Layout/contact/contact.component';
 
 export const routes: Routes = [
     {

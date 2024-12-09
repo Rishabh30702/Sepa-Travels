@@ -31,10 +31,11 @@
   .info p {
     font-size: 18px;
     margin: 5px 0;
-    color: #CAAA58;
+    color: #FDD302;
   }
   .fa-phone{
     font-size: 3.8rem;
+    color: #FDD302;
   }
   
   .phone-number {
@@ -43,7 +44,7 @@
     margin: 20px 0;
   }
   .phone-number:hover{
-    color: #d1b26f;
+    color: #FDD302;
     cursor: pointer;
     transition: 0.5s;
   }
@@ -91,7 +92,7 @@
   font-weight: 700;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
-  color: #caaa58;
+  color: #FDD302;
   font-size: 280px;
   line-height: 0.5;
   letter-spacing: -10px;
@@ -101,7 +102,7 @@
   font-weight: 900;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
-  color: #caaa58;
+  color: #FDD302;
   font-size: 52px;
   line-height: 2.5;
   letter-spacing: 4px;
@@ -183,7 +184,24 @@
   color: #333; /* Dark gray for the text */
   margin: 0;
 }
-
+.car-blocks h4{
+  margin-top: 4vh;
+  border: 0.3px solid #FDD302;
+  padding: 0.2rem;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.car-blocks h4:hover{
+  cursor: pointer;
+  border: 0.3px solid black;
+  background-color: #FDD302;
+  padding: 0.3rem;
+  color: black !important;
+  transition: 0.6s;
+  opacity: 1;
+  border-radius: 1rem;
+}
 
 
 /* Count Section Container */
@@ -223,7 +241,7 @@
   font-weight: 700;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
-  color: #caaa58;
+  color: #FDD302;
   font-size: 66px;
   line-height: 1;
   letter-spacing: -2px;
@@ -245,7 +263,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #d1b26f; /* Matches the golden background */
+  background-color: #FDD302; /* Matches the golden background */
   color: #fff; /* White text */
   padding: 20px;
 }
@@ -340,6 +358,7 @@
   }
   .fa-phone{
     font-size: 3.8rem;
+    color: #FDD302;
   }
 
   .info, .car-image {
@@ -357,6 +376,20 @@
   .car-blocks {
     grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
   }
+  .car-blocks h4{
+    margin-top: 4vh;
+    border: 0.3px solid #FDD302;
+    padding: 0.4rem;
+  }
+  .car-blocks h4:hover{
+    cursor: pointer;
+    border: 0.3px solid black;
+    background-color: #FDD302;
+    padding: 0.4rem;
+    color: black !important;
+    transition: 0.4s;
+  }
+
 
   .service-section, .contact-section {
     flex-direction: column;
@@ -380,6 +413,7 @@
   }
   .fa-phone{
     font-size: 1.7rem;
+    color: #FDD302;
   }
 
   .info h2 {
@@ -402,6 +436,19 @@
 
   .car-blocks {
     grid-template-columns: 1fr; /* Adjust to 1 column */
+  }
+  .car-blocks h4{
+    margin-top: 4vh;
+    border: 0.3px solid #FDD302;
+    padding: 0.4rem;
+  }
+  .car-blocks h4:hover{
+    cursor: pointer;
+    border: 0.3px solid black;
+    background-color: #FDD302;
+    padding: 0.4rem;
+    color: black !important;
+    transition: 0.4s;
   }
 
   .contact-section {

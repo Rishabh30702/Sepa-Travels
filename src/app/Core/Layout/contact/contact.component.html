@@ -12,7 +12,8 @@
           formControlName="name" 
           [ngClass]="{ 'invalid-input': contactForm.get('name')?.invalid && contactForm.get('name')?.touched }" 
         />
-        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message" style="color: red;">
+        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message" style="color: red;"
+       >
           Name is required.
         </div>
       </div>
@@ -24,7 +25,8 @@
           placeholder="Email" 
           type="email" 
           formControlName="email" 
-          [ngClass]="{ 'invalid-input': contactForm.get('email')?.invalid && contactForm.get('email')?.touched }" 
+          [ngClass]="{ 'invalid-input': contactForm.get('email')?.invalid && contactForm.get('email')?.touched }"
+
         />
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error-message">
           <span *ngIf="contactForm.get('email')?.errors?.['required']" style="color: red;">Email is required.</span>
@@ -40,7 +42,8 @@
           formControlName="message" 
           [ngClass]="{ 'invalid-input': contactForm.get('message')?.invalid && contactForm.get('message')?.touched }">
         </textarea>
-        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message" style="color: red;">
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message" style="color: red;"
+       >
           Message is required.
         </div>
       </div>
@@ -58,7 +61,7 @@
     <div class="count-block">
       <h2 id="passengers-count" class="count">
         <div class="home_icon">
-          <i class="fas fa-home" style="color: #d1b26f; font-size: 5rem;"></i>  
+          <i class="fas fa-home" style="color: #FBD309; font-size: 5rem;"></i>  
         </div>
         <br>
         8901 Marmora Road, Glasgow, D04 89GR.
@@ -67,7 +70,7 @@
     <div class="count-block" (click)="makeCall()" style="cursor: pointer;">
       <h2 id="drivers-count" class="count">
         <div class="home_icon">
-          <i class="fas fa-phone" style="color: #d1b26f; font-size: 5rem;"></i>  
+          <i class="fas fa-phone" style="color: #FBD309; font-size: 5rem;"></i>  
         </div>
         <br>
         {{ phoneNum }}
@@ -76,7 +79,7 @@
     <div class="count-block" (click)="sendEmail()" style="cursor: pointer;">
       <h2 id="routes-count" class="count">
         <div class="home_icon">
-          <i class="fas fa-envelope" style="color: #d1b26f; font-size: 5rem;"></i>  
+          <i class="fas fa-envelope" style="color: #FBD309; font-size: 5rem;"></i>  
         </div>
         <br>
         {{ mail }}

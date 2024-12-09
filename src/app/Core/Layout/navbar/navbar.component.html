@@ -20,18 +20,27 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item" (click)="menuItemSelected()">
-          <a class="nav-link" (click)="home()">HOME</a>
+          <a class="nav-link" (click)="home()">{{ 'HOME' | translate   }}</a>
         </li>
         <li class="nav-item" (click)="menuItemSelected()">
-          <a class="nav-link" (click)="about()">ABOUT</a>
+          <a class="nav-link" (click)="about()">{{ 'ABOUT' | translate }}</a>
         </li>
         <li class="nav-item" (click)="menuItemSelected()">
-          <a class="nav-link" (click)="service()">SERVICES</a>
+          <a class="nav-link" (click)="service()">{{'SERVICES' | translate}}</a>
         </li>
         <li class="nav-item" (click)="menuItemSelected()">
-          <a class="nav-link" (click)="contact()">CONTACT</a>
+          <a class="nav-link" (click)="contact()">{{ 'CONTACT' | translate }}</a>
         </li>
       </ul>
+      <div class="language-switch">
+        <span>English</span>
+        <label class="switch">
+          <input type="checkbox" (change)="toggleLanguage($event)" />
+          <span class="slider round"></span>
+        </label>
+        <span>French</span>
+      </div>
+      
 
       <!-- Right Side: Call Info inside Hamburger Menu -->
       <div class="d-flex flex-column call-info" style="cursor: pointer;" (click)="callIn();menuItemSelected()">

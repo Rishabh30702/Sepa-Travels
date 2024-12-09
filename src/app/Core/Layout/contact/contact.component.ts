@@ -1,8 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { NavbarComponent } from "../../Navbar/navbar/navbar/navbar.component";
+import { NavbarComponent } from "../navbar/navbar.component";
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from "../../Footer/footer/footer.component"; // Import CommonModule
+import { FooterComponent } from "../footer/footer.component"; // Import CommonModule
 import Swal from 'sweetalert2';
 
 @Component({

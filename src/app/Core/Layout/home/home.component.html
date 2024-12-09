@@ -3,12 +3,12 @@
 <div class="page-content">
   <div class="home-container">
     <div class="info">
-      <h2>24 HOURS 7 DAYS A WEEK</h2>
-      <p (click)="callIn()">CALL US NOW!</p>
-      <h1 class="phone-number" (click)="callIn()"><i class="fa-solid fa-phone" style="color: #caaa58; " (click)="callIn()"></i>&nbsp;{{ phoneNum }}</h1>
+      <h2>{{'24 HOURS 7 DAYS A WEEK' | translate}}</h2>
+      <p (click)="callIn()">{{'CALL US NOW!' |translate}}</p>
+      <h1 class="phone-number" (click)="callIn()"><i class="fa-solid fa-phone" style="color: #fdd302; " (click)="callIn()"></i>&nbsp;{{ phoneNum }}</h1>
       <p class="description">
-        The operator will call back immediately<br />
-        and report the cost of travel
+        {{'The operator will call back immediately' | translate}}<br />
+        {{ 'and report the cost of travel' | translate }}
       </p>
     </div>
     <div class="car-image">
@@ -20,17 +20,13 @@
     <div class="service-info">
       <div class="time-highlight">
         <h1 class="time">10</h1>
-        <p class="unit">MINUTES</p>
+        <p class="unit">{{'MINUTES'|translate}}</p>
       </div>
       <div class="service-details">
-        <h2>THE CAR IS SUPPLIED IN</h2>
-        <h3>10 MINUTES ANYWHERE IN THE CITY!</h3>
+        <h2>{{'THE CAR IS SUPPLIED IN' | translate}}</h2>
+        <h3>{{'10 MINUTES ANYWHERE IN THE CITY!'|translate}}</h3>
         <p>
-          Taxi VIP company provides you with the best services in New York. You
-          can order a taxi from New York airport to the hotel, and our driver will
-          meet you at the gate with a nameplate. We provide taxi service to any
-          New York airport. Our specialty is taxi and business transfers for
-          foreigners.
+         {{'Taxi company provide...' |translate}}
         </p>
       </div>
     </div>
@@ -39,18 +35,18 @@
   <div class="car-blocks">
     <div class="car-block">
       <img src="merc.png" alt="Car 1" />
-      <p class="car-name">STANDARD CLASS</p>
-      <h2 style="color: #caaa58;">₹899 /KM</h2>
+      <p class="car-name">{{'STANDARD CLASS' | translate}}</p>
+      <h4 style="color: #fdd302">{{'CALL US NOW!'|translate}}</h4>
     </div>
     <div class="car-block">
       <img src="business.png" alt="Car 2" />
-      <p class="car-name">BUSINESS CLASS</p>
-      <h2 style="color: #caaa58;">₹500 /KM</h2>
+      <p class="car-name">{{'BUSINESS CLASS'|translate}}</p>
+      <h4 style="color: #fdd302">{{'CALL US NOW!'|translate}}</h4>
     </div>
     <div class="car-block">
       <img src="minivan.png" alt="Car 3" />
-      <p class="car-name">MINIVAN & VAN CLASS</p>
-      <h2 style="color: #caaa58;">₹300 /KM</h2>
+      <p class="car-name">{{'MINIVAN & VAN CLASS'|translate}}</p>
+      <h4 style="color: #fdd302">{{'CALL US NOW!'|translate}}</h4>
     </div>
   </div>
   
@@ -60,15 +56,15 @@
     <div class="count-container">
       <div class="count-block">
         <h2 id="passengers-count" class="count">0</h2>
-        <p>PASSENGERS</p>
+        <p>{{'PASSENGERS'|translate}}</p>
       </div>
       <div class="count-block">
         <h2 id="drivers-count" class="count">0</h2>
-        <p>DRIVERS</p>
+        <p>{{'DRIVERS'|translate}}</p>
       </div>
       <div class="count-block">
         <h2 id="routes-count" class="count">0</h2>
-        <p>ROUTES</p>
+        <p>{{'ROUTES'|translate}}</p>
       </div>
     </div>
   </div>
@@ -77,10 +73,10 @@
   
   <div class="contact-section">
     <div class="contact-text">
-      <h2>24 HOURS 7 DAYS A WEEK</h2>
-      <p>Call Us Now!</p>
+      <h2> {{'HOURS 7 DAYS A WEEK'|translate}}</h2>
+      <p>{{'CALL US NOW!' |translate}}</p>
       <p class="phone-number" (click)="callIn()"><i class="fa-solid fa-phone" id="front_phone" style="color: #fff; font-size: 2rem;" (click)="callIn()"></i>&nbsp; {{ phoneNum }}</p>
-      <span>The operator will call back immediately and report the cost of travel</span>
+      <span>{{'The operator...'|translate}}</span>
     </div>
     <div class="contact-image">
       <img src="head.png" alt="Consultant" />
@@ -95,7 +91,7 @@
           <img src="sym.png"/>
         </div>
       </div>
-      <p class="feedback-text">Thank you very much. I'm impressed with your service. I've already told my friends about your company and your quick response, thanks again!</p>
+      <p class="feedback-text">{{'Thank you very much. I am impressed with your service. I have already told my friends about your company and your quick response, thanks again!'|translate}}</p>
       <p class="feedback-name">Mark Jenkins</p>
     </div>
   
@@ -105,7 +101,7 @@
           <img src="sym.png"/>
         </div>
       </div>
-      <p class="feedback-text">Wow, I'm so happy with your service. You managed to exceed my expectations! You guys are very efficient and I will refer more people to your company!</p>
+      <p class="feedback-text">{{'Wow'|translate}}</p>
       <p class="feedback-name">Dudley Diaz</p>
     </div>
   
@@ -113,7 +109,7 @@
       <div class="quote-symbol">
         <img src="sym.png"/>
       </div>
-      <p class="feedback-text">I would just like to say thank you for your prompt and effective service, for your friendly and professional support staff! I will recommend your expert company to all my friends.</p>
+      <p class="feedback-text">{{'I Would...'|translate}}</p>
       <p class="feedback-name">Meril Ward</p>
     </div>
   </div>

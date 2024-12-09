@@ -39,7 +39,7 @@ input, textarea {
 input:focus, textarea:focus {
   outline: none; /* Removes the default focus outline */
   box-shadow: none; /* Removes the shadow effect */
-  border-color: #d1b26f; /* Optional: Add a subtle border color change for focus */
+  border-color: #FBD309; /* Optional: Add a subtle border color change for focus */
 }
 
 /* Error Message Styling */
@@ -59,7 +59,7 @@ button {
   cursor: pointer;
   font-size: 1.2rem;
   margin-top: 8px;
-  background-color: #caaa58;
+  background-color: #FBD309;
 }
 
 button:hover {
@@ -77,7 +77,7 @@ button:hover {
   color: white; /* Text color for counts */
   padding: 0 20px;
   overflow: hidden; /* Prevent any overflow outside the section */
-  background-image: url('/con_building.jpg'); /* Add your background image */
+  background-image: url('/building.jpg'); /* Add your background image */
   background-size: cover; /* Ensure the image covers the section */
   background-position: center center; /* Center the image */
   background-attachment: fixed; /* Parallax scrolling effect */

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarComponent } from "../../Navbar/navbar/navbar/navbar.component";
-import { FooterComponent } from "../../Footer/footer/footer.component";
+import { NavbarComponent } from "../navbar/navbar.component";
+import { FooterComponent } from "../footer/footer.component";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent, TranslateModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

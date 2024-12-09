@@ -1,0 +1,375 @@
+/* Container for the entire component */
+.about-us-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Styling for the text content (heading and paragraph) */
+.text-content {
+  margin-bottom: 30px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.text-content h1 {
+  font-size: 3vw;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 5%;
+}
+
+.text-content p {
+  font-size: 2vw;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Styling for the card container */
+.card-container {
+  display: flex;
+  gap: 5vw; /* Space between the cards */
+  justify-content: center; /* Center cards horizontally */
+  align-items: center; /* Center cards vertically */
+  
+}
+
+
+/* Individual card styles */
+.card {
+  position: relative;
+  width: 350px;
+  height: auto;/*automatically adjust to different screen sizes*/
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Card image styling */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay with Learn More button */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay button {
+  padding: 10px 20px; 
+  color: #FDD401;;
+  border: 1.3px solid #FDD401;;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  font-size: 14px;
+  background: transparent;
+}
+
+.card-overlay button:hover {
+  background-color: #FDD401;
+  color: white;
+}
+
+/* Bullet Points Section */
+.bullet-points {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align rows to the top */
+  margin-top: 30px;
+  gap: 20px; /* Add spacing between bullet rows */
+  width: 100%; /* Take full width */
+  max-width: 1200px; /* Optional: Limit the container's width */
+  margin-left: 4vw; 
+}
+
+
+
+/* changed to 0 to avoid movement of page left right*/
+@media (max-width: 1024px) {
+  .bullet-points {
+    margin-left: 0vw;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .bullet-points {
+    margin-left: 0vw;
+    
+     
+  }
+}
+
+
+.bullet {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align bullets to the left */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%; /* Allow bullets to span full width */
+  font-size: 16px;
+  color: #FDD401;
+  line-height: 1.6;
+  gap: 30px; /* Space between bullet items in a row */
+}
+
+.bullet span {
+  flex: 1; /* Distribute items evenly */
+  text-align: left; /* Align text to the left */
+  margin-right: 20px;
+  font-size: 1.8vw;
+}
+
+
+
+/* Our Team Section Container */
+.our-team-container {
+  position: relative;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url('/building.jpg');
+  max-height: auto; /* Limit height */
+ 
+  overflow: hidden; /* Hide content that overflows */
+  opacity: 0.9; /* Optional: Make it less opaque */
+}
+
+
+
+
+/* Transparent Overlay */
+.our-team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  z-index: 1; /* Make sure it sits above the content */
+  pointer-events: none; /* Allow interaction with underlying content */
+  border-radius: 10px; /* Same as the container */
+}
+
+/* Our Team Heading */
+.our-team-container h2 {
+  font-size: 32px;
+  color: #fff; /* White text for better visibility */
+  margin-bottom: 20px;
+  font-weight: bold;
+  z-index: 2; /* Ensure the heading stays above the overlay */
+  position: relative;
+}
+
+/* Team Cards Container */
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10vw; /* Space between team cards */
+  overflow-x: auto; /* Horizontal scroll */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  padding-bottom: 10px;
+  z-index: 2; /* Ensure cards are above the overlay */
+  position: relative;
+ 
+}
+
+
+/* Media query for smaller screens (e.g., tablets, small desktops) */
+@media (max-width: 1024px) {
+.team-cards {
+  justify-content: flex-start;
+  
+}
+}
+
+/* Media query for smaller screens (e.g., tablets in portrait mode) */
+@media (max-width: 768px) {
+.team-cards {
+  display: inline-block;
+   
+}
+}
+
+
+
+/* Scrollbar Style */
+.team-cards::-webkit-scrollbar {
+
+  height: 8px;
+}
+
+.team-cards::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 4px;
+}
+
+
+/* Individual Team Card */
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0; /* Prevent shrinking */
+  transition: transform 0.3s ease;
+}
+
+
+
+
+/* Hover Effect on Team Card */
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+/* Team Member Image */
+.team-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Team Info */
+.team-info {
+  text-align: center;
+}
+
+.team-info h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.team-info p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+
+
+
+/* Text Container */
+.text-container {
+  flex: 1; /* Takes up 50% of the container */
+  color: white; /* White text */
+  margin-left: 4vw;
+  
+}
+
+
+
+
+/* Heading Style */
+.text-container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+
+/* Paragraph Style */
+.text-container p {
+  font-size: 22px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+
+/* Image Container */
+.image-container {
+  flex: 1; /* Takes up 50% of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile Phone Display Image */
+.image-container img {
+  max-width: 50%; /* Make sure the image fits within the container */
+}
+
+
+.driver-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust gap between the sections */
+  padding: 20px; /* Optional for spacing around the content */
+  margin-top: 1.5rem;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+
+
+/*made responsive for small screens*/
+@media (max-width: 768px) {
+.driver-section {
+  flex-direction: column;
+  
+ 
+}
+}
+.driver-info,
+.driver-training {
+  flex: 1; /* Makes both sections equally wide */
+  padding: 10px;
+  background-color: #f9f9f9; /* Optional for background styling */
+}
+
+.driver-info h2,
+.driver-training h2 {
+  margin-bottom: 10px;
+  font-size: 2.6rem;
+  color: #333; /* Styling for headings */
+}
+
+.driver-info p,
+.driver-training p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555; /* Styling for paragraphs */
+}
+
+
+
+
+
+
