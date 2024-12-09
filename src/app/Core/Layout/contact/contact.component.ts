@@ -4,10 +4,11 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../footer/footer.component"; // Import CommonModule
 import Swal from 'sweetalert2';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
-  imports: [NavbarComponent, ReactiveFormsModule, CommonModule, FooterComponent],
+  imports: [NavbarComponent, ReactiveFormsModule, CommonModule, FooterComponent,TranslateModule],
   standalone: true,
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'

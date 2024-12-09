@@ -21,8 +21,13 @@
     "The operator...": "L'opérateur rappellera immédiatement et signalera le coût du voyage",
      "Thank you very much. I am impressed with your service. I have already told my friends about your company and your quick response, thanks again!":"Merci beaucoup. Je suis impressionné par votre service. J'ai déjà parlé de votre entreprise à mes amis et de votre réponse rapide, merci encore !",
      "Wow":"Wow, je suis tellement content de ton service. Vous avez réussi à surpasser mes attentes ! Vous êtes très efficaces et je recommanderai plus de personnes à votre entreprise !",
-     "I Would...":"J'aimerais juste vous remercier pour votre service rapide et efficace, pour votre personnel de soutien amical et professionnel ! Je recommanderai votre entreprise experte à tous mes amis."
-     
+     "I Would...":"J'aimerais juste vous remercier pour votre service rapide et efficace, pour votre personnel de soutien amical et professionnel ! Je recommanderai votre entreprise experte à tous mes amis.",
+     "CONTACT FORM" : "FORMULAIRE DE CONTACT",
+     "Send message" : "Envoyer un message",
+     "Name is required.": "Le nom est requis.",
+     "Message is required.": "Un message est requis.",
+     "Email is required.":"Un courriel est requis.",
+     "Please enter a valid email address." : "Veuillez indiquer une adresse courriel valide."
    
     }
 
