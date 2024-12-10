@@ -13,6 +13,7 @@
   margin-right: 4vw;
 }
 
+
 .text-content h1 {
   font-size: 3vw;
   color: #333;
@@ -354,11 +355,29 @@
   background-color: #f9f9f9; /* Optional for background styling */
 }
 
+
+
+
 .driver-info h2,
 .driver-training h2 {
   margin-bottom: 10px;
   font-size: 2.6rem;
   color: #333; /* Styling for headings */
+}
+/* changed font for small screen devices */
+@media (max-width: 1024px) {
+  .driver-info h2,.driver-training h2 {
+ font-size: 1.9rem;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .driver-info h2,.driver-training h2 {
+   font-size: 1.9rem;
+    
+     
+  }
 }
 
 .driver-info p,
