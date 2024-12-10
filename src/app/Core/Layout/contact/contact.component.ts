@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../footer/footer.component"; // Import CommonModule
 import Swal from 'sweetalert2';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
@@ -25,7 +25,7 @@ onResize(event: any) {
   this.isSmallScreen = window.innerWidth <= 600;
 }
 
-  constructor(private fb:FormBuilder){ 
+  constructor(private fb:FormBuilder,private translate: TranslateService){ 
     this.contactForm = this.fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required,Validators.email]],
@@ -37,9 +37,9 @@ onResize(event: any) {
   onSubmit(){
     if(this.contactForm?.valid){
       console.log(this.contactForm.value);
-      Swal.fire({title:"Success", text:"Form submitted successfully.", icon:'success'})
+      this.showSuccessModal();
     }else{
-      Swal.fire({title:"Failed", text:"Something went wrong.", icon:'error'})
+      this.showFailedModal();
     }
   }
   // loadMap() {
@@ -65,5 +65,23 @@ onResize(event: any) {
     const phone = this.phoneNum;
     const makecall = `tel:${phone}`;
     window.location.href = makecall;
+  }
+  showSuccessModal() {
+    this.translate.get(['SWAL_SUCCESS_TITLE', 'SWAL_SUCCESS_TEXT']).subscribe(translations => {
+      Swal.fire({
+        title: translations['SWAL_SUCCESS_TITLE'],
+        text: translations['SWAL_SUCCESS_TEXT'],
+        icon: 'success'
+      });
+    });
+  }
+  showFailedModal(){
+    this.translate.get(['SWAL_FAILED_TITLE', 'SWAL_FAILED_TEXT']).subscribe(translations => {
+      Swal.fire({
+        title: translations['SWAL_FAILED_TITLE'],
+        text: translations['SWAL_FAILED_TEXT'],
+        icon: 'error'
+      });
+    });
   }
 }

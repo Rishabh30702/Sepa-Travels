@@ -18,7 +18,7 @@
     "DRIVERS": "CHAUFFEURS",
     "ROUTES": "ITINÉRAIRES",
     "HOURS 7 DAYS A WEEK": "HORAIRES 7 JOURS SUR 7",
-    "The operator...": "L'opérateur rappellera immédiatement et signalera le coût du voyage",
+    "The operator will call back immediately and report the cost of the trip.": "L'opérateur rappellera immédiatement et signalera le coût du voyage",
      "Thank you very much. I am impressed with your service. I have already told my friends about your company and your quick response, thanks again!":"Merci beaucoup. Je suis impressionné par votre service. J'ai déjà parlé de votre entreprise à mes amis et de votre réponse rapide, merci encore !",
      "Wow":"Wow, je suis tellement content de ton service. Vous avez réussi à surpasser mes attentes ! Vous êtes très efficaces et je recommanderai plus de personnes à votre entreprise !",
      "I Would...":"J'aimerais juste vous remercier pour votre service rapide et efficace, pour votre personnel de soutien amical et professionnel ! Je recommanderai votre entreprise experte à tous mes amis.",
@@ -46,8 +46,11 @@
      "DRIVER INFORMATION": "RENSEIGNEMENTS SUR LE CONDUCTEUR",
      "With over 4000 taxi cabs servicing the area our Taxi Drivers provide the excellent service over a wide range of areas.":"Avec plus de 4000 taxis desservant la région, nos chauffeurs de taxi offrent un excellent service dans un large éventail de domaines.",
     "DRIVER TRAINING": "FORMATION DE CONDUCTEUR",
-    "We recognize the important role Drivers play in the development of our industry. We offer innovative programs to all Drivers such as the First Choice program.":"Nous reconnaissons le rôle important que jouent les chauffeurs dans le développement de notre industrie. Nous offrons des programmes innovateurs à tous les conducteurs, comme le programme First Choice."
-   
+    "We recognize the important role Drivers play in the development of our industry. We offer innovative programs to all Drivers such as the First Choice program.":"Nous reconnaissons le rôle important que jouent les chauffeurs dans le développement de notre industrie. Nous offrons des programmes innovateurs à tous les conducteurs, comme le programme First Choice.",
+     "SWAL_SUCCESS_TITLE": "Succès",
+     "SWAL_SUCCESS_TEXT": "Formulaire soumis avec succès.",
+     "SWAL_FAILED_TITLE": "Échoué",
+     "SWAL_FAILED_TEXT": "Quelque chose s'est mal passé."
     }
 
   
