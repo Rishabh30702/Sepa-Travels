@@ -51,7 +51,25 @@
      "SWAL_SUCCESS_TEXT": "Formulaire soumis avec succès.",
      "SWAL_FAILED_TITLE": "Échoué",
      "SWAL_FAILED_TEXT": "Quelque chose s'est mal passé.",
-     "All right reserved.": "Tous droits réservés."
-    }
+     "All right reserved.": "Tous droits réservés.",
+     "24 HOUR SERVICE": "SERVICE 24 HEURES",
+     "Our reliable taxi sedan and van services go far beyond the norm. We not only get you where you need to be, but we transport you with a level of care that can only be achieved through years of experience serving the area.":"Nos services fiables de taxi, berline et fourgonnette vont bien au-delà de la norme. On vous reçoit pas juste là où vous devez être, mais nous vous transportons avec un niveau de soin qui ne peut être atteint que grâce à des années d'expérience au service de la région.",
+     "Our taxi operators are local experts who know the best routes to get you to your destination on time. And we rely on GPS technology to further ensure quick, accurate service.":"Nos opérateurs de taxi sont des experts locaux qui connaissent les meilleurs itinéraires pour vous amener à votre destination à temps. Et nous comptons sur la technologie GPS pour assurer un service rapide et précis.",
+     "AIRPORT TRANSFER":"AÉROPORT TRANSFÉRER",
+     "With more than 4000 taxi cabs in its network, TaxiVIP can deliver your parcel to its destination.":"Avec plus de 4000 taxis dans son réseau, TaxiVIP peut livrer votre colis à destination.",
+"PARCEL DELIVERY":"LIVRAISON DE COLIS",
 
+"Take the stress out of travelling to and from the airport by booking one of TaxiVIP reliable taxis.":"Éliminez le stress depuis et vers l'aéroport en réservant l'un des taxis fiables TaxiVIP.",
+
+"DOOR TO DOOR SERVICE":"SERVICE À LA PORTE",
+"Offering door-to-door service with drop-off right at your next destination.":"Offrant un service porte-à-porte avec dépôt directement à votre prochaine destination.",
+"LOCATION CODES":"CODES DE LOCALISATION",
+"Businesses can be assigned location codes upon request. This is a 3 or 4 character code specific to your location that can expedite the cab ordering process. When you call in for a cab you will just give the calltaker your code and will not have to give your address.":"Les entreprises peuvent se voir attribuer des codes de localisation sur demande. Il s'agit d'un code à 3 ou 4 caractères propre à votre emplacement qui peut accélérer le processus de commande de taxi. Lorsque vous appelez un taxi, vous donnerez simplement votre code au preneur d'appels et vous n'aurez pas à donner votre adresse.",
+"More Info":"Plus d'info",
+"CORPORATE ACCOUNTS":"COMPTES D'ENTREPRISE",
+"A TaxiVIP corporate charge account provides your business or organization with priority access to passenger and package delivery services. Your account is the perfect answer for providing transportation to imporatant clients, visiting executives.":"Un compte de facturation d'entreprise TaxiVIP offre à votre entreprise ou organisation un accès prioritaire aux services de livraison de passagers et de colis. Votre compte est la solution idéale pour assurer le transport de clients importants et de cadres en visite.",
+"QUOTE & BOOK":"DEVIS et LIVRE",
+"Get a fast quote for your transportation needs, then make your reservation online with our convenient booking engine. When you book your taxi online, you can track your taxi's arrival on our website." : "Obtenez une soumission rapide pour vos besoins en transport, puis effectuez votre réservation en ligne avec notre moteur de réservation pratique. Lorsque vous réservez votre taxi en ligne, vous pouvez suivre son arrivée sur notre site web."     
+     
+}
   
