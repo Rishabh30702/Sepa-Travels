@@ -119,6 +119,8 @@
   .count-block p {
       font-size: 1.2rem; /* Adjust paragraph text */
   }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -197,9 +199,10 @@
 }
 
 .feature h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
   color: #333;
+  
 }
 
 .feature img {
