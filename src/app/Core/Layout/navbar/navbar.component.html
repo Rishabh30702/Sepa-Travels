@@ -38,14 +38,15 @@
             alt="Switch to French"
             class="flag-icon"
             (click)="toggleLanguage('fr')"
-          />
-          <img
+            />
+            <img
             *ngIf="currentLanguage === 'fr'"
             src="ukflag.png"
             alt="Switch to English"
             class="flag-icon"
             (click)="toggleLanguage('en')"
-          />
+            />
+            <span style="color: #FBD309;">{{ langText }}</span>
         </div>
         
       </ul>

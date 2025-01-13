@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  langText:string = '';
   phoneNum:number = 12345678;
   currentLanguage: string = 'en'; // Default to English
 
@@ -18,7 +18,7 @@ export class NavbarComponent {
      this.currentLanguage = localStorage.getItem('language') || 'en';
   this.translate.setDefaultLang('en');
   this.translate.use(this.currentLanguage);
-
+  this.setLangText();
    }
   about(){
     this._route.navigate(['/About'])
@@ -49,6 +49,7 @@ export class NavbarComponent {
     }
   }
   toggleLanguage(selectedLanguage: string): void {
+    
     this.currentLanguage = selectedLanguage;
     const flagElement = document.querySelector('.flag-icon');
   if (flagElement) {
@@ -63,5 +64,10 @@ export class NavbarComponent {
   
     // Save the selected language in localStorage for persistence
     localStorage.setItem('language', selectedLanguage);
+    this.setLangText();
+  }
+  setLangText(): void {
+    // Set langText value based on the current language
+    this.langText = this.currentLanguage === 'en' ? 'FR' : 'UK';  // Example for 'Hello' and 'Bonjour'
   }
 }
