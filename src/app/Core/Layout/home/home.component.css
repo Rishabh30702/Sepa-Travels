@@ -172,7 +172,7 @@
 /* Image styling */
 .car-block img {
   max-width: 80%;
-  height: auto;
+  height: 60%;
   margin-bottom: 15px;
   border-radius: 5px; /* Optional: Rounded edges for the image */
 }
@@ -305,13 +305,17 @@
   margin-right: 3vw;
 }
 
-
+.testimonials-section{
+  text-align: center; 
+  margin-top: 3vh;
+  
+}
 /* Feedback Section */
 .feedback-section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 50px 20px;
+  padding: 30px 20px;
   background-color: white; /* Light background color for the feedback section */
   margin-left: 3vw;
   margin-right: 3vw;
@@ -356,6 +360,7 @@
     align-items: center;
     text-align: center;
   }
+  
   .fa-phone{
     font-size: 3.8rem;
     color: #FDD302;
@@ -389,7 +394,9 @@
     color: black !important;
     transition: 0.4s;
   }
-
+  .car-block img{
+    height: 40%;
+      }
 
   .service-section, .contact-section {
     flex-direction: column;
@@ -411,6 +418,10 @@
   .home-container {
     padding: 20px;
   }
+  .car-block img{
+    height: 40%;
+    }
+
   .fa-phone{
     font-size: 1.7rem;
     color: #FDD302;
