@@ -7,7 +7,8 @@ import { TranslateModule } from "@ngx-translate/core";
   selector: 'app-home',
   imports: [NavbarComponent, FooterComponent, TranslateModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
+  
 })
 export class HomeComponent implements OnInit{
  
@@ -28,6 +29,7 @@ export class HomeComponent implements OnInit{
       }
     });
   }
+  
   animateCounter(element: HTMLElement, end: number, duration: number) {
     const start = 0;
     const increment = Math.ceil(end / (duration / 16.67)); // Approximation of frames per second
