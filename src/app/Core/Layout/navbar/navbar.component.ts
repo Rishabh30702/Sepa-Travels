@@ -2,30 +2,23 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-navbar',
-  imports: [TranslateModule],
+  imports: [TranslateModule,CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
 
   phoneNum:number = 12345678;
+  currentLanguage: string = 'en'; // Default to English
 
   constructor(private _route:Router, private translate: TranslateService){
-    const savedLanguage = localStorage.getItem('language') || 'en';
+     this.currentLanguage = localStorage.getItem('language') || 'en';
   this.translate.setDefaultLang('en');
-  this.translate.use(savedLanguage);
+  this.translate.use(this.currentLanguage);
 
-  // Set toggle state based on saved language
-  setTimeout(() => {
-    const toggleInput = document.querySelector(
-      '.language-switch input'
-    ) as HTMLInputElement;
-    if (toggleInput) {
-      toggleInput.checked = savedLanguage === 'fr';
-    }
-  });
    }
   about(){
     this._route.navigate(['/About'])
@@ -55,11 +48,17 @@ export class NavbarComponent {
       navbarCollapse.classList.remove('show');
     }
   }
-  toggleLanguage(event: Event): void {
-    const isChecked = (event.target as HTMLInputElement).checked;
-    const selectedLanguage = isChecked ? 'fr' : 'en';
-  
-    // Use the selected language
+  toggleLanguage(selectedLanguage: string): void {
+    this.currentLanguage = selectedLanguage;
+    const flagElement = document.querySelector('.flag-icon');
+  if (flagElement) {
+    flagElement.classList.add('animate-wave');
+    setTimeout(() => {
+      flagElement.classList.remove('animate-wave');
+    }, 1000); // Duration matches the CSS animation
+  }
+    
+    // Update the language in the translation service
     this.translate.use(selectedLanguage);
   
     // Save the selected language in localStorage for persistence

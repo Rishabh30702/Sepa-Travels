@@ -31,15 +31,25 @@
         <li class="nav-item" (click)="menuItemSelected()">
           <a class="nav-link" (click)="contact()">{{ 'CONTACT' | translate }}</a>
         </li>
+        <div class="language-switch">
+          <img
+            *ngIf="currentLanguage === 'en'"
+            src="frflag.png"
+            alt="Switch to French"
+            class="flag-icon"
+            (click)="toggleLanguage('fr')"
+          />
+          <img
+            *ngIf="currentLanguage === 'fr'"
+            src="ukflag.png"
+            alt="Switch to English"
+            class="flag-icon"
+            (click)="toggleLanguage('en')"
+          />
+        </div>
+        
       </ul>
-      <div class="language-switch">
-        <span>English</span>
-        <label class="switch">
-          <input type="checkbox" (change)="toggleLanguage($event)" />
-          <span class="slider round"></span>
-        </label>
-        <span>French</span>
-      </div>
+     
       
 
       <!-- Right Side: Call Info inside Hamburger Menu -->
