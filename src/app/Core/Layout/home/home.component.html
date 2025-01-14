@@ -12,7 +12,7 @@
       </p>
     </div>
     <div class="car-image">
-      <img src="golden-car.png" alt="Golden Car Taxi" />
+      <img src="golden-car.png" alt="Golden Car Taxi" #carImage/>
     </div>
   </div>
   
@@ -70,56 +70,54 @@
   </div>
   
   
-  
-  <div class="contact-section">
+  <div class="contact-section hidden" #contactSection>
     <div class="contact-text">
-      <h2> {{'HOURS 7 DAYS A WEEK'|translate}}</h2>
-      <p>{{'CALL US NOW!' |translate}}</p>
-      <p class="phone-number" (click)="callIn()"><i class="fa-solid fa-phone" id="front_phone" style="color: #fff; font-size: 2rem;" (click)="callIn()"></i>&nbsp; {{ phoneNum }}</p>
-      <span>{{'The operator will call back immediately and report the cost of the trip.'|translate}}</span>
+      <h2>{{ 'HOURS 7 DAYS A WEEK' | translate }}</h2>
+      <p>{{ 'CALL US NOW!' | translate }}</p>
+      <p class="phone-number" (click)="callIn()">
+        <i class="fa-solid fa-phone" id="front_phone" style="color: #fff; font-size: 2rem;" (click)="callIn()"></i>&nbsp; {{ phoneNum }}
+      </p>
+      <span>{{ 'The operator will call back immediately and report the cost of the trip.' | translate }}</span>
     </div>
     <div class="contact-image">
       <img src="head.png" alt="Consultant" />
     </div>
   </div>
+  
 
 
   
-  <div class="testimonials-section">
-    <h2>{{'Testimonials' | translate}}</h2>
+  <div class="testimonials-section hidden" #testimonialsSection>
+    <h2>{{ 'Testimonials' | translate }}</h2>
   </div>
   
-  <div class="feedback-section">
-   
+  <div class="feedback-section hidden" #feedbackSection>
     <div class="feedback-box">
-      
       <div class="quote-symbol">
-        <div class="quote-symbol">
-          <img src="sym.png"/>
-        </div>
+        <img src="sym.png" />
       </div>
-      <p class="feedback-text">{{'Thank you very much. I am impressed with your service. I have already told my friends about your company and your quick response, thanks again!'|translate}}</p>
+      <p class="feedback-text">
+        {{ 'Thank you very much. I am impressed with your service. I have already told my friends about your company and your quick response, thanks again!' | translate }}
+      </p>
       <p class="feedback-name">Mark Jenkins</p>
     </div>
   
-    <div class="feedback-box">
+    <div class="feedback-box hidden">
       <div class="quote-symbol">
-        <div class="quote-symbol">
-          <img src="sym.png"/>
-        </div>
+        <img src="sym.png" />
       </div>
-      <p class="feedback-text">{{'Wow'|translate}}</p>
+      <p class="feedback-text">{{ 'Wow' | translate }}</p>
       <p class="feedback-name">Dudley Diaz</p>
     </div>
   
-    <div class="feedback-box">
+    <div class="feedback-box hidden">
       <div class="quote-symbol">
-        <img src="sym.png"/>
+        <img src="sym.png" />
       </div>
-      <p class="feedback-text">{{'I Would...'|translate}}</p>
+      <p class="feedback-text">{{ 'I Would...' | translate }}</p>
       <p class="feedback-name">Meril Ward</p>
     </div>
-  </div>
+  </div>  
 </div>
 
 <app-footer></app-footer>
