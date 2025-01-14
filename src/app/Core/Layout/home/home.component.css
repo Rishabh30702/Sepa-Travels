@@ -11,6 +11,36 @@
     padding: 50px;
     width: 100%;
   }
+
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .car-image img {
+    animation: slideInFromRight 1.5s ease-in-out forwards;
+    opacity: 0; /* Ensure it's hidden initially */
+    transform: translateX(100%); /* Start off-screen */
+  }
+  .car-image {
+    width: 50%; /* Adjust based on design */
+    overflow: hidden; /* Ensure smooth clipping if necessary */
+  }
+  .car-image img {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: none;
+  }
+  
+  .car-image img.animate {
+    animation: slideInFromRight 1.5s ease-in-out forwards;
+  }
   
   .info {
     flex: 1;
@@ -298,6 +328,26 @@
   margin-right: 3vw;
 }
 
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.contact-section.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.contact-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+
 .testimonials-section{
   text-align: center; 
   margin-top: 3vh;
@@ -347,6 +397,61 @@
   color: black; /* Name in black */
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hidden State */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.6s ease-in forwards;
+}
+
+.slide-in {
+  animation: slideIn 0.6s ease-in forwards;
+}
+
+.feedback-box {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideIn 0.6s ease-in forwards;
+}
+
+.feedback-box:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.feedback-box:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.feedback-box:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
 @media (max-width: 1024px) {
   .home-container {
     flex-direction: column;
@@ -391,6 +496,36 @@
     height: 40%;
       }
 
+      @keyframes slideInFromRight {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      .car-image img {
+        animation: slideInFromRight 1.5s ease-in-out forwards;
+        opacity: 0; /* Ensure it's hidden initially */
+        transform: translateX(100%); /* Start off-screen */
+      }
+      .car-image {
+        width: 50%; /* Adjust based on design */
+        overflow: hidden; /* Ensure smooth clipping if necessary */
+      }
+      .car-image img {
+        transform: translateX(100%);
+        opacity: 0;
+        transition: none;
+      }
+      
+      .car-image img.animate {
+        animation: slideInFromRight 1.5s ease-in-out forwards;
+      }
+
   .service-section, .contact-section {
     flex-direction: column;
     text-align: center;
@@ -403,6 +538,60 @@
 
   .feedback-section {
     flex-direction: column;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Hidden State */
+  .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in forwards;
+  }
+  
+  .slide-in {
+    animation: slideIn 0.6s ease-in forwards;
+  }
+  
+  .feedback-box {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideIn 0.6s ease-in forwards;
+  }
+  
+  .feedback-box:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .feedback-box:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .feedback-box:nth-child(3) {
+    animation-delay: 0.9s;
   }
 }
 
@@ -455,6 +644,35 @@
     transition: 0.4s;
   }
 
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .car-image img {
+    animation: slideInFromRight 1.5s ease-in-out forwards;
+    opacity: 0; /* Ensure it's hidden initially */
+    transform: translateX(100%); /* Start off-screen */
+  }
+  .car-image {
+    width: 50%; /* Adjust based on design */
+    overflow: hidden; /* Ensure smooth clipping if necessary */
+  }
+  .car-image img {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: none;
+  }
+  
+  .car-image img.animate {
+    animation: slideInFromRight 1.5s ease-in-out forwards;
+  }
   .contact-section {
     padding: 5px;
     padding-top: 8px;
@@ -484,6 +702,60 @@
   .count-block {
     margin-bottom: 20px;
     margin-bottom: 1vh;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Hidden State */
+  .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in forwards;
+  }
+  
+  .slide-in {
+    animation: slideIn 0.6s ease-in forwards;
+  }
+  
+  .feedback-box {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideIn 0.6s ease-in forwards;
+  }
+  
+  .feedback-box:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .feedback-box:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .feedback-box:nth-child(3) {
+    animation-delay: 0.9s;
   }
   
 }
