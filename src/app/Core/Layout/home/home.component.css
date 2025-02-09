@@ -11,6 +11,17 @@
     padding: 50px;
     width: 100%;
   }
+  @keyframes fromstart {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    
+  }
 
   @keyframes slideInFromRight {
     from {
@@ -181,6 +192,9 @@
   background-color: #fff; /* Light gray background for the section */
   margin-left: 3vw;
   margin-right: 3vw;
+  animation:fromstart linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
 }
 
 /* Individual car block styling */
@@ -478,6 +492,9 @@
 
   .car-blocks {
     grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+    animation:fromstart linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
   }
   .car-blocks h4{
     margin-top: 4vh;
@@ -510,7 +527,9 @@
       .car-image img {
         animation: slideInFromRight 1.5s ease-in-out forwards;
         opacity: 0; /* Ensure it's hidden initially */
-        transform: translateX(100%); /* Start off-screen */
+        animation: slideInFromRight linear;
+        animation-timeline: view();
+        animation-range: entry 20% cover 40%;
       }
       .car-image {
         width: 50%; /* Adjust based on design */
@@ -629,6 +648,9 @@
 
   .car-blocks {
     grid-template-columns: 1fr; /* Adjust to 1 column */
+    animation:fromstart linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
   }
   .car-blocks h4{
     margin-top: 4vh;
