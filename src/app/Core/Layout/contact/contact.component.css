@@ -53,20 +53,15 @@ input:focus, textarea:focus {
 
 button {
   padding: 10px 20px;
-  color: black;
   font-weight: bold;
-  border: 2px solid black;
   cursor: pointer;
   font-size: 1.2rem;
   margin-top: 8px;
+  border: none;
+  border-radius: 0.4rem;
   background-color: #FBD309;
 }
 
-button:hover {
-  color: white;
-  background-color: black;
-  transition: 0.3s;
-}
 
 .count-section {
   position: relative;
